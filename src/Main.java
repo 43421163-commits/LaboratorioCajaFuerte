@@ -8,13 +8,20 @@ public class Main {
         //Probando el metodo abrir con la clave correcta
         caja.abrir(1234);
 
-        //probando el metodo cerrar
-        caja.cerrar();
+        //Probando el metodo depositar
+        caja.depositar(1500.00);
 
-        //Provando el metodo abrir con claves incorrectas
-        caja.abrir(4565);
-        caja.abrir(9859);
-        caja.abrir(8975);
+        //Probando el metodo retirar
+        caja.retirar(500.00);
+
+        //Probando el metodo mostarEstado
+        caja.mostrarEstado();
+        caja.cerrar();
+        //Probando los metodos anteriores con una clave incorrecta
+        caja.abrir(4852);
+        caja.depositar(1500.00);
+        caja.retirar(500.00);
+        caja.mostrarEstado();
 
     }
 }
